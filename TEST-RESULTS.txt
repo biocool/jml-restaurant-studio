@@ -1,0 +1,24 @@
+JML Restaurant Studio — verification 2026-11-16
+
+PASSED
+- 200-record initial dataset; unique IDs and normalized name/ZIP identities.
+- Original 111 records retained with source fields; 89 further candidates integrated. Total additional research candidates: 100.
+- Full 200-record CSV and JSON roundtrip, preserving original fields and null values.
+- CSV effective-photo fallback preserved; nested/custom fields retained.
+- Multiline audit bullet remains one item when roundtripped unchanged.
+- Import validation rejects duplicate IDs, unsafe file-path IDs, invalid gauge values, malformed audit issue arrays and malformed competitor/gauge objects.
+- Unknown gauges are not represented as zero; manual gauges explicitly labeled user-entered.
+- HTTP(S) URL safety, uploaded-photo data restrictions and script-terminator escaping.
+- Both original-template preview scripts parse correctly.
+- Browser ZIP writer verified using Python zipfile CRC/integrity and exact content.
+- Simulated app handlers: add location, edit name/city, edit gauge, photo FileReader replacement, localStorage fallback save and fresh-context reload, invalid gauge rejection.
+- All source JavaScript syntax checks.
+
+NOT VERIFIED IN A REAL BROWSER
+- Desktop/mobile visual rendering and interactive scrolling.
+- Actual IndexedDB persistence, browser download behavior and native file dialog.
+- Browser print behavior and remote-image availability.
+The available cloud browser could not reach the local test server; system Chromium could not launch under this execution environment. VM tests do not replace real-browser testing.
+
+RESEARCH LIMITS
+Manual entries are user-entered. The app does not verify Google Maps metrics or price eligibility. Alternative-source restaurant tiers, individual menu prices and indexed Google price categories remain distinct in the full data. Uploaded photos need user permission for publication. Existing remote images may be unavailable. No repository was created, no files published and no GitHub sync implemented.

@@ -1,0 +1,56 @@
+[
+  {
+    "name": "JSON backup roundtrip preserves fields",
+    "result": "PASS",
+    "details": 200
+  },
+  {
+    "name": "CSV photo fallback preservation",
+    "result": "PASS"
+  },
+  {
+    "name": "CSV structured/custom fields and gauge preservation",
+    "result": "PASS"
+  },
+  {
+    "name": "CSV preserves multiline audit issue as one item",
+    "result": "PASS"
+  },
+  {
+    "name": "Reject invalid imported issue schema",
+    "result": "PASS"
+  },
+  {
+    "name": "Reject path traversal export IDs",
+    "result": "PASS"
+  },
+  {
+    "name": "Gauge range invalid values rejected",
+    "result": "PASS"
+  },
+  {
+    "name": "Unknown gauges not shown as zero",
+    "result": "PASS"
+  },
+  {
+    "name": "Manual gauges labeled user entered",
+    "result": "PASS"
+  },
+  {
+    "name": "SET render both templates generated",
+    "result": "PASS",
+    "details": "HTML generated, visual execution not verified"
+  },
+  {
+    "name": "Uploaded/replaced photo embedded and old photo not selected",
+    "result": "PASS"
+  },
+  {
+    "name": "Malicious script terminator escaped in record",
+    "result": "PASS"
+  },
+  {
+    "name": "Bad image URL becomes blank fallback",
+    "result": "PASS"
+  }
+]
