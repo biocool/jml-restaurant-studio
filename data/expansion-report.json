@@ -1,0 +1,22 @@
+{
+  "checked_at": "2026-11-17",
+  "previous_records": 200,
+  "added": 34,
+  "total": 234,
+  "previous_zip_target": 100,
+  "previous_zip_added": 13,
+  "previous_zip_shortfall": 87,
+  "new_areas": {
+    "Rancho Bernardo": 3,
+    "La Jolla": 13,
+    "Carmel Valley / Torrey Hills": 5,
+    "Carmel Mountain": 0
+  },
+  "price_basis": "Published OpenTable dining categories $31–50 or $50+; not Google Maps and not guaranteed spend; primary address sources retained",
+  "held": "Holiday/event-only and weekend-only pricing excluded. Holey Moley/Hijinx entertainment chain excluded for restaurant-fit. Q Terrace excluded after August2026 closure evidence. No verified general-price candidate in Carmel Mountain.",
+  "records_preserved": true,
+  "mapped_total": 190,
+  "new_mapped": 28,
+  "unmapped_total": 44,
+  "q_terrace_exclusion_source": "https://bestoflagunabeach.substack.com/p/q-terrace-laguna-beach-closes"
+}

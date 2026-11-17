@@ -1,0 +1,12 @@
+/* Versioned seed additions without overwriting browser edits or resurrecting deletions. */
+(function(root){'use strict';
+const key='jml-restaurant-studio-v1',seenKey=key+'-seed-ids';
+function merge(saved,seed,seen,baseline){let known=new Set(seen||baseline||[]),out=(saved===null||saved===undefined)?structuredClone(seed):structuredClone(saved),present=new Set(out.map(r=>r.id)),added=0;if(saved!=null)for(let r of seed)if(!known.has(r.id)&&!present.has(r.id)){out.push(structuredClone(r));present.add(r.id);added++}for(let r of seed)known.add(r.id);return {records:out,seen:[...known],added}}
+async function open(){return new Promise((resolve,reject)=>{if(!root.indexedDB)return reject(Error('IndexedDB unavailable'));let q=root.indexedDB.open(key,1);q.onupgradeneeded=()=>q.result.createObjectStore('workspace');q.onerror=()=>reject(q.error);q.onsuccess=()=>resolve(q.result)})}
+async function load(seed){const api=root.JML_CORE||root.JML;seed=api.validate(seed);let db=null,saved=null,seen=null,warning='';try{db=await open();[saved,seen]=await new Promise((resolve,reject)=>{let t=db.transaction('workspace'),s=t.objectStore('workspace'),a=s.get('records'),b=s.get('seedSeenIds');t.oncomplete=()=>resolve([a.result,b.result]);t.onerror=()=>reject(t.error)})}catch{db=null;try{saved=JSON.parse(localStorage.getItem(key)||'null');seen=JSON.parse(localStorage.getItem(seenKey)||'null')}catch{warning='Browser storage unavailable. Export a backup before leaving.'}}
+if(saved!=null)try{saved=api.validate(saved)}catch{if(db)db.close();return {records:seed,db:null,warning:'Stored data invalid; bundled data shown without overwriting it. Export a backup.',added:0}}
+let result=merge(saved,seed,Array.isArray(seen)?seen:null,root.JML_BASELINE_IDS||[]);
+let needsSave=saved==null||!Array.isArray(seen)||result.added>0||seed.some(r=>!seen.includes(r.id));try{if(needsSave&&db){await new Promise((resolve,reject)=>{let t=db.transaction('workspace','readwrite'),s=t.objectStore('workspace');s.put(result.records,'records');s.put(result.seen,'seedSeenIds');t.oncomplete=resolve;t.onerror=()=>reject(t.error)})}else if(needsSave){localStorage.setItem(key,JSON.stringify(result.records));localStorage.setItem(seenKey,JSON.stringify(result.seen))}}catch{warning='New records available, but browser save failed. Export a JSON backup now.'}
+return {...result,db,warning,restored:saved!=null}}
+root.JML_WORKSPACE={load,merge};if(typeof module!=='undefined')module.exports={merge};
+})(typeof window==='undefined'?globalThis:window);
