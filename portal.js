@@ -6,3 +6,5 @@ document.getElementById('export-site-visible').onclick=()=>document.getElementBy
 document.getElementById('fullscreen').onclick=()=>{let panel=document.querySelector('.preview-panel');panel.classList.toggle('expanded');document.getElementById('fullscreen').textContent=panel.classList.contains('expanded')?'✕ Close':'⛶ Expand'};document.addEventListener('keydown',e=>{if(e.key==='Escape'){document.querySelector('.preview-panel').classList.remove('expanded');document.getElementById('fullscreen').textContent='⛶ Expand'}});showView('locations');
 
 document.getElementById('backup-visible').onclick=()=>document.getElementById('export-json').click();
+
+window.addEventListener('load',()=>{let q=new URLSearchParams(location.search);if(q.get('embedded')){document.querySelector('.rail').hidden=true;document.querySelector('.topbar').hidden=true;document.querySelector('.app-shell').style.marginLeft='0';document.querySelector('.workspace-note').hidden=true;}let tries=0,t=setInterval(()=>{if(records.length||++tries>100){clearInterval(t);let id=q.get('record');if(id&&records.some(r=>r.id===id))select(id);if(q.has('view'))showView(q.get('view'));}},50)});
