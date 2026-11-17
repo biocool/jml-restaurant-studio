@@ -1216,17 +1216,17 @@
     "census_match_type": "Exact"
   },
   "poway-el-ranchito-taco-shop": {
-    "lat": 32.956419464655,
-    "lng": -117.035142712763,
+    "lat": 32.962367283955,
+    "lng": -117.036271370441,
     "source": "US Census Geocoder / Public_AR_Current",
     "source_url": "https://geocoding.geo.census.gov/geocoder/locations/addressbatch",
-    "matched_address": "13654 POWAY RD, POWAY, CA, 92064",
+    "matched_address": "13654 MIDLAND RD, POWAY, CA, 92064",
     "precision": "street-range interpolation",
-    "checked_at": "2026-11-17T01:21:02.654186+00:00",
-    "input_address": "13654 Poway Rd Ste 9 & 10, Poway, CA 92064",
+    "checked_at": "2026-11-17T16:04:07.943648+00:00",
+    "input_address": "13654 Midland Rd #9-10, Poway, CA 92064",
     "input_city": "Poway",
     "input_zip": "92064",
-    "geocode_query": "13654 Poway Rd",
+    "geocode_query": "13654 Midland Rd",
     "status": "matched",
     "reason": null,
     "census_match_type": "Exact"
@@ -1840,20 +1840,20 @@
     "census_match_type": null
   },
   "newport-alt-05": {
-    "lat": 33.614724064203,
-    "lng": -117.927478660022,
+    "lat": null,
+    "lng": null,
     "source": "US Census Geocoder / Public_AR_Current",
     "source_url": "https://geocoding.geo.census.gov/geocoder/locations/addressbatch",
     "matched_address": "3010 LAFAYETTE RD, NEWPORT BEACH, CA, 92663",
-    "precision": "street-range interpolation",
-    "checked_at": "2026-11-17T01:21:02.654186+00:00",
-    "input_address": "3010 LaFayette Road, Newport Beach, CA 92663",
+    "precision": null,
+    "checked_at": "2026-11-17T16:04:07.943919+00:00",
+    "input_address": "3010 Lafayette Ave, Newport Beach, CA 92663",
     "input_city": "Newport Beach",
     "input_zip": "92663",
-    "geocode_query": "3010 LaFayette Road",
-    "status": "matched",
-    "reason": null,
-    "census_match_type": "Exact"
+    "geocode_query": "3010 Lafayette Ave",
+    "status": "unresolved",
+    "reason": "non_exact_requires_review_after_address_correction",
+    "census_match_type": "Non_Exact"
   },
   "newport-alt-06": {
     "lat": null,
@@ -2176,20 +2176,20 @@
     "census_match_type": "Exact"
   },
   "R1-ALT-06": {
-    "lat": null,
-    "lng": null,
+    "lat": 33.466014216391,
+    "lng": -117.704971480919,
     "source": "US Census Geocoder / Public_AR_Current",
     "source_url": "https://geocoding.geo.census.gov/geocoder/locations/addressbatch",
     "matched_address": "34094 PACIFIC COAST HWY, DANA POINT, CA, 92629",
-    "precision": null,
-    "checked_at": "2026-11-17T01:21:02.654186+00:00",
-    "input_address": "34094 Pacific Coastal Hwy",
+    "precision": "street-range interpolation",
+    "checked_at": "2026-11-17T16:04:07.943932+00:00",
+    "input_address": "34094 Pacific Coast Hwy",
     "input_city": "Dana Point",
     "input_zip": "92629",
-    "geocode_query": "34094 Pacific Coastal Hwy",
-    "status": "unresolved",
-    "reason": "non_exact_requires_review",
-    "census_match_type": "Non_Exact"
+    "geocode_query": "34094 Pacific Coast Hwy",
+    "status": "matched",
+    "reason": null,
+    "census_match_type": "Exact"
   },
   "R1-ALT-07": {
     "lat": 33.528636893508,

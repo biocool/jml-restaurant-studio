@@ -1,0 +1,88 @@
+{
+  "total": 234,
+  "attempted": 234,
+  "status_counts": {
+    "verified": 218,
+    "unverified": 9,
+    "blocked": 6,
+    "mismatch": 1
+  },
+  "validation_errors": [],
+  "closure_flags": [
+    {
+      "id": "newport-11",
+      "name": "Il Farro",
+      "closure_flag": "temporarily_closed"
+    },
+    {
+      "id": "newport-18",
+      "name": "SOTA Sushi",
+      "closure_flag": "temporarily_closed"
+    },
+    {
+      "id": "newport-alt-10",
+      "name": "Nagisa Sushi Restaurant",
+      "closure_flag": "Permanently closed — explicit Google Maps heading and Notice button"
+    },
+    {
+      "id": "R1-EXTRA-4",
+      "name": "Terra Laguna Beach",
+      "closure_flag": "Google Maps reports permanently closed"
+    },
+    {
+      "id": "R1-EXTRA-5",
+      "name": "Driftwood Kitchen",
+      "closure_flag": "Google Maps reports permanently closed"
+    }
+  ],
+  "not_claimed": "Link verification is not confirmation that business is currently operating, that prices qualify, or that Google metrics are audited. Pending/blocked/unverified are not passing results.",
+  "corrected_record_count": 12,
+  "corrected_address_count": 3,
+  "matched_after_corrections": 227,
+  "unresolved": [
+    {
+      "id": "newport-13",
+      "name": "Olea",
+      "status": "blocked",
+      "url": "https://www.google.com/maps/search/?api=1&query=Olea%202001%20Westcliff%20Drive%2C%20Suite%20100%2C%20Newport%20Beach%2C%20CA%2092660"
+    },
+    {
+      "id": "R1-NEW-4",
+      "name": "RAYA",
+      "status": "blocked",
+      "url": "https://www.google.com/maps/search/?api=1&query=RAYA%20One%20Ritz%20Carlton%20Drive%20Dana%20Point%20CA%2092629"
+    },
+    {
+      "id": "newport-alt-18",
+      "name": "Fleming’s Steakhouse - Newport Beach",
+      "status": "blocked",
+      "url": "https://www.google.com/maps/search/?api=1&query=Fleming%E2%80%99s%20Steakhouse%20-%20Newport%20Beach%20455%20Newport%20Center%20Drive%20Newport%20Beach%2092660"
+    },
+    {
+      "id": "south-alt-04",
+      "name": "Koya Sushi",
+      "status": "unverified",
+      "url": "https://www.google.com/maps/search/?api=1&query=Koya%20Sushi%2027792%20Aliso%20Creek%20Rd%20%23B-130%20Aliso%20Viejo%2092656"
+    },
+    {
+      "id": "newport-extra-01",
+      "name": "SHOR American Seafood Grill",
+      "status": "blocked",
+      "url": "https://www.google.com/maps/search/?api=1&query=SHOR%20American%20Seafood%20Grill%201107%20Jamboree%20Rd%2C%20Newport%20Beach%2C%20CA%2092660%20Newport%20Beach%2092660"
+    },
+    {
+      "id": "rb-phils-bbq",
+      "name": "Phil’s BBQ – Rancho Bernardo",
+      "status": "blocked",
+      "url": "https://www.google.com/maps/search/?api=1&query=Phil%E2%80%99s%20BBQ%20%E2%80%93%20Rancho%20Bernardo%2017051%20West%20Bernardo%20Drive%2C%20San%20Diego%2C%20CA%2092127"
+    },
+    {
+      "id": "sdnew-piazza-1909",
+      "name": "Piazza 1909",
+      "status": "blocked",
+      "url": "https://www.google.com/maps/search/?api=1&query=Piazza%201909%207731%20Fay%20Avenue%20La%20Jolla%20CA%2092037"
+    }
+  ],
+  "source": "Actual Google Maps listing observations, 2026-11-17; replacement URLs reopened and matched. Closure labels are Google Maps reports, not independent owner confirmations.",
+  "storage_policy": "Corrections apply only if name/address/map still match shipped originals. User-modified identity/address/map values and deleted records remain unchanged. Other user notes remain unchanged."
+}

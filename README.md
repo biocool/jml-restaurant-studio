@@ -58,3 +58,10 @@ The supplied JML Sales Portal remains the main interface. `manager.html` retains
 - Map: 190 matched / 234 records. Census street-range interpolation is approximate; 44 records lack a reliable current match and are not plotted.
 - Closed Q Terrace, special-event/weekend-only price evidence and unsuitable entertainment-only fit were excluded. See `data/expansion-report.json`.
 - `workspace.js` stores seen seed IDs alongside records. New seed IDs are added once; existing browser edits, local additions and deletions are preserved. This is not cross-device or GitHub synchronization.
+
+
+## Google Maps audit and conditional corrections (2026-11-17)
+All 234 original links were attempted in a browser. After 12 independently reopened replacement links, 227 destinations were matched; 6 access failures and 1 listing without a street address remain unverified. This is link identity verification, not a completed GBP audit or a claim all businesses remain open. See data/maps-audit-summary.json for limitations and reported closure flags.
+
+The original data/records files remain intact. data/maps-corrections.js applies documented public-business corrections to the bundled seed and, through workspace.js, to saved records only when the original name, address and map still match. Custom identity/address/map edits are never overwritten; edited notes and deletions are preserved. CSV/JSON exports contain the effective current records. Address-source disagreements remain documented. Three corrected addresses were resubmitted to Census: two Exact matches are plotted as approximate street-range positions; Cannery’s Non_Exact result is withheld. No Google coordinates were copied into the territory map.
+
